@@ -16,7 +16,7 @@ program basic_bank_jvcr6xp.aleo {
     // - `amount`: The amount of tokens to issue.
     // Requires that the function caller is the bank.
     // The bank's address is aleo1rhgdu77hgyqd3xjj8ucu3jj9r2krwz6mnzyd80gncr5fxcwlh5rsvzp9px.
-    transition issue(owner: address, amount: u64) -> Token {
+    transition issue1(owner: address, amount: u64) -> Token {
         assert_eq(self.caller, aleo1rhgdu77hgyqd3xjj8ucu3jj9r2krwz6mnzyd80gncr5fxcwlh5rsvzp9px);
         return Token {
             owner: owner,
